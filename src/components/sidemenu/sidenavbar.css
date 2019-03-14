@@ -1,0 +1,60 @@
+/* xs */
+.blm-sidenavbar {
+  position: absolute;
+  left: -100vw;
+  width: 0vw;
+  height: 81vh;
+  overflow: hidden;
+
+  -webkit-transition: left 0.5s ease-out;
+  -moz-transition: left 0.5s ease-out;
+  -o-transition: left 0.5s ease-out;
+  transition: left 0.5s ease-out;
+}
+
+/* When menu is opened */
+.blm-menuopened {
+  width: 50vw;
+  left: 0;
+  overflow: visible;
+
+  -webkit-box-shadow: 10px -1px 5px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px -1px 5px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px -1px 5px -5px rgba(0, 0, 0, 0.75);
+}
+
+/* Overlay for remaining part which is not cover by menu*/
+.blm-menuopened::after {
+  width: 50vw;
+  height: 81vh;
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 100%;
+  position: absolute;
+}
+
+/* sm */
+@media only screen and (min-width: 576px) {
+  .blm-sidenavbar {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 89vh;
+    left: 0vw;
+  }
+}
+
+/* md */
+@media only screen and (min-width: 768px) {
+  .blm-sidenavbar {
+    width: 25%;
+  }
+}
+
+/* lg,xl */
+@media only screen and (min-width: 992px) {
+  .blm-sidenavbar {
+    width: 20%;
+  }
+}
