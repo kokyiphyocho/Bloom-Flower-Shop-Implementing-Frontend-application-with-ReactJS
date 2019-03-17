@@ -1,0 +1,35 @@
+/* xs */
+.blm-datagrid {
+    float: left;
+    width: 100vw;
+    height: 81vh;
+    overflow: auto;
+  }
+  
+  .blm-datagrid .blm-gridcontent {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* sm */
+  @media only screen and (min-width: 576px) {
+    .blm-datagrid {
+      width: 70%;
+      height: 89vh;
+    }
+  }
+  
+  /* md */
+  @media only screen and (min-width: 768px) {
+    .blm-datagrid {
+      width: 75%;
+    }
+  }
+  
+  /* lg,xl */
+  @media only screen and (min-width: 992px) {
+    .blm-datagrid {
+      width: 80%;
+    }
+  }
+  

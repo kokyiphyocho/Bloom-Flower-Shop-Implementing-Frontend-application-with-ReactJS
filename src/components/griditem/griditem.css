@@ -1,0 +1,68 @@
+/* xs */
+.blm-griditem {
+    display: inline-block;
+    width: 40%;
+    margin: 3% 5%;
+  }
+  
+  .blm-griditem img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5vh;
+  }
+  
+  .blm-griditem .blm-caption {
+    width: 100%;
+    height: 5vh;
+    overflow: hidden;
+    padding: 0 2vw;
+    font-size: 85%;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .blm-griditem .blm-priceinfo {
+    height: 3vh;
+    overflow: hidden;
+  }
+  
+  .blm-griditem .blm-priceinfo div {
+    white-space: nowrap;
+  }
+  
+  .blm-griditem .blm-priceinfo .blm-price {
+    font-size: 130%;
+  }
+  
+  /* sm */
+  @media only screen and (min-width: 576px) {
+    .blm-griditem {
+      width: 35%;
+      margin: 1% 7%;
+    }
+  
+    .blm-griditem img {
+      margin-bottom: 1%;
+    }
+  
+    .blm-griditem .blm-caption {
+      height: 2.2rem;
+    }
+  }
+  
+  /* md */
+  @media only screen and (min-width: 768px) {
+    .blm-griditem {
+      width: 23%;
+      margin: 1% 5%;
+    }
+  }
+  
+  /* lg, xl */
+  @media only screen and (min-width: 992px) {
+    .blm-griditem {
+      width: 15%;
+      margin: 1% 5%;
+    }
+  }
+  

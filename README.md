@@ -739,7 +739,7 @@ export default PageButton;
 When we fetch data from different origin, it violates the same-origin policy and browser will prevent from getting the data
 from server. Configurating adding proxy address in __*package.json*__ file will eliminate the CORS related issues.
 
-```json
+```javascript
 {
   "name": "bloom",
   ...
